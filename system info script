@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "System Information Report"
+echo "=========================="
+echo "Hostname: $(hostname)"
+echo "Uptime: $(uptime -p)"
+echo "Memory Info:"
+free -h
+echo "Disk Usage:"
+df -h
+echo "CPU Info:"
+lscpu | grep 'Model name\|Architecture\|CPU(s)'
